@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="421179b4-57f4-4cdd-9740-3fc2e8990722" name="Default" comment="" />
+    <list default="true" id="421179b4-57f4-4cdd-9740-3fc2e8990722" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/requirements_base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_base.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +19,21 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ProlificFinal.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Feedback/templates/Feedback/ProlificFinal.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demographics/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="271">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements_base.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements_base.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -73,6 +84,9 @@
       <dir>C:\Users\Scott\Documents\ARIZONA\oTree project\SurvivalGame_v6_Prolific (Study3)</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -86,7 +100,6 @@
         <option value="$PROJECT_DIR$/Instructions/templates/Instructions/PlayingTheGame1.html" />
         <option value="$PROJECT_DIR$/Feedback/templates/Feedback/ExtraQuestions.html" />
         <option value="$PROJECT_DIR$/otree_mturk_utils/templates/otree_mturk_utils/CustomWaitPage.html" />
-        <option value="$PROJECT_DIR$/requirements_base.txt" />
         <option value="$PROJECT_DIR$/Instructions/templates/Instructions/BeginExample.html" />
         <option value="$PROJECT_DIR$/Comprehension/templates/Comprehension/BeginStudy.html" />
         <option value="$PROJECT_DIR$/SurvivalGame/manageHITs.py" />
@@ -121,12 +134,13 @@
         <option value="$PROJECT_DIR$/ExampleYear/templates/ExampleYear/Request.html" />
         <option value="$PROJECT_DIR$/Instructions/templates/Instructions/Manipulation.html" />
         <option value="$PROJECT_DIR$/Demographics/views.py" />
-        <option value="$PROJECT_DIR$/Demographics/models.py" />
         <option value="$PROJECT_DIR$/Demographics/tests.py" />
         <option value="$PROJECT_DIR$/Demographics/templates/Demographics/Prolific.html" />
         <option value="$PROJECT_DIR$/Feedback/views.py" />
         <option value="$PROJECT_DIR$/Feedback/tests.py" />
         <option value="$PROJECT_DIR$/Feedback/templates/Feedback/ProlificFinal.html" />
+        <option value="$PROJECT_DIR$/Demographics/models.py" />
+        <option value="$PROJECT_DIR$/requirements_base.txt" />
       </list>
     </option>
   </component>
@@ -140,15 +154,16 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-10" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,33 +174,19 @@
             <path>
               <item name="SurvivalGame_v6_Prolific (Study3)" type="b2602c69:ProjectViewProjectNode" />
               <item name="SurvivalGame_v6_Prolific (Study3)" type="462c0819:PsiDirectoryNode" />
-              <item name="Feedback" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SurvivalGame_v6_Prolific (Study3)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SurvivalGame_v6_Prolific (Study3)" type="462c0819:PsiDirectoryNode" />
-              <item name="Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SurvivalGame_v6_Prolific (Study3)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SurvivalGame_v6_Prolific (Study3)" type="462c0819:PsiDirectoryNode" />
-              <item name="Feedback" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Feedback" type="462c0819:PsiDirectoryNode" />
+              <item name="Demographics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SurvivalGame_MTurk_v4 (Study2)" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -289,10 +290,9 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32993197" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32967034" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12684564" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12818792" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32527474" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -303,26 +303,27 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32527474" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19495167" />
       <window_info id="Structure" order="1" weight="0.24973147" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32993197" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32527474" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32993197" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,13 +338,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ExampleYear/templates/ExampleYear/GrowthAndShock.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ExampleYear/templates/ExampleYear/NoTransfers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -418,9 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="372" column="12" lean-forward="true" selection-start-line="372" selection-start-column="12" selection-end-line="372" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,9 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8292">
           <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#134#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -519,9 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,9 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="212" column="46" selection-start-line="212" selection-start-column="46" selection-end-line="212" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,9 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,20 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demographics/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demographics/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,9 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,7 +635,21 @@
     <entry file="file://$PROJECT_DIR$/Feedback/templates/Feedback/ProlificFinal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demographics/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements_base.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
