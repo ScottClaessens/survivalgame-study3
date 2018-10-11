@@ -1,0 +1,81 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    End of <b>Example Year</b>
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Your final herd size for the Example Year is <b>{{ herd_size_after_transfers }}</b>.
+    You have ended the year above the survival threshold of {{minherd|c}}.
+</p>
+
+{% if charts %}
+    <br>
+    {% include 'SurvivalGame/chart.html' %}
+{% endif %}
+
+
+<p>
+    Click Next to continue.
+</p>
+
+{% next_button %}
+
+{% if summary_box %}
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>Example Year Summary</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Current herd size:</td>
+            <td><b>{{herd_size_after_transfers}}</b></td>
+        </tr>
+        <tr>
+            <td><u>Incomings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player you requested help from:</td>
+            <td><b>{% if request %}Player 2{% else %}-{% endif %}</b></td>
+        </tr>
+        <tr>
+            <td>Amount requested by you:</td>
+            <td><b>{% if request %}{{request_amount}}{% else %}-{% endif %}</b></td>
+        </tr>
+        <tr>
+            <td>Amount received:</td>
+            <td><b>
+                {% if request %}
+                    {{10|c}}
+                {% else %}
+                    -
+                {% endif %}
+            </b></td>
+        </tr>
+            <tr>
+            <td><u>Outgoings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player(s) requested help from you:</td>
+            <td><b>
+                -
+            </b></td>
+        </tr>
+        <tr>
+            <td>Amount(s) sent:</td>
+            <td><b>
+                -
+            </b></td>
+        </tr>
+    </table>
+{% endif %}
+
+{% endblock %}

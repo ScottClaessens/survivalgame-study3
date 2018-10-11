@@ -1,0 +1,52 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    <b>Instructions</b> - Playing the Game
+{% endblock %}
+
+{% block content %}
+
+{% if visible_ask and visible_give %}
+    <p>
+        In the game, the other player will be able to see how many cattle you currently have both <b>when they ask you
+        for cattle</b> and <b>when they decide whether to give you cattle</b>.
+    </p>
+    <p>
+        Similarly, you will be able to see how many cattle the other player currently has when you ask them
+        for cattle and when you decide whether to give them cattle.
+    </p>
+{% elif visible_ask and not visible_give %}
+    <p>
+        In the game, the other player will only be able to see how many cattle you currently have <b> when they ask you
+        for cattle</b>.
+    </p>
+    <p>
+        Similarly, you will only be able to see how many cattle the other player currently has when you ask them
+        for cattle.
+    </p>
+{% elif visible_give and not visible_ask %}
+    <p>
+        In the game, the other player will only be able to see how many cattle you currently have
+        <b>when they decide whether to give you cattle</b>.
+    </p>
+    <p>
+        Similarly, you will only be able to see how many cattle the other player currently has
+        when you decide whether to give them cattle.
+    </p>
+{% elif not visible_ask and not visible_give %}
+    <p>
+        In the game, the other player will <b>never</b> be able to see how many cattle you currently have.
+    </p>
+    <p>
+        Similarly, you will <b>never</b> be able to see how many cattle the other player currently has.
+    </p>
+{% endif %}
+
+<p>
+    Click Next to learn more about the game.
+</p>
+
+{% next_button %}
+
+{% endblock %}

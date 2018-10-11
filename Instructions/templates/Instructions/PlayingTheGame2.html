@@ -1,0 +1,44 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block styles %}
+<style type="text/css">
+    li {
+      margin: 10px;
+    }
+</style>
+{% endblock %}
+
+{% block title %}
+    <b>Instructions</b> - Playing the Game
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Each year is made up of several stages:
+</p>
+<ol>
+    <li><b>Herd births and deaths.</b> Cattle will be born, and your herd will increase. You may then experience a "disaster".
+        If a disaster happens, some of your cattle will die. Disasters are unpredictable.</li>
+    <li><b>Ask for cattle.</b> You will have the opportunity to ask for cattle from the other player
+        in your group.</li>
+    <li><b>Respond to others.</b> If the other player asks for cattle from you, you will have the opportunity
+        to respond.</li>
+    <li><b>End of Year.</b> If your herd size is below the "survival threshold" of {{minherd|c}} at the end of the year,
+        a warning message will come up telling you to increase your herd back above the threshold. If your herd
+        size remains under the threshold for
+        {% if years == 1 %}
+            1 year,
+        {% elif years > 1 %}
+            {{years}} years,
+        {% endif %}
+        you will "die" and will be removed from the game.</li>
+</ol>
+<p>
+    Click Next to learn more about the game.
+</p>
+
+{% next_button %}
+
+{% endblock %}

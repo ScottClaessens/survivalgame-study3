@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Welcome to the study!
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Please first fill in some information about yourself. This information will remain anonymous.
+</p>
+
+{% formfield player.age label="What is your age?" %}
+
+{% formfield player.sex label="What is your sex?" %}
+
+{% formfield player.language label="What is your primary language?" %}
+
+{% next_button %}
+
+{% endblock %}

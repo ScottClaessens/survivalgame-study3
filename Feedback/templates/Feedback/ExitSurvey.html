@@ -1,0 +1,35 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Exit Survey
+{% endblock %}
+
+{% block content %}
+
+<p>
+    The following questions are not compulsory, but we will pay you <b>an extra $0.01</b>
+    on top of what you have already earned for each question answered.
+</p>
+
+<p>
+    Please state <b>to what extent you agree / disagree with the statements below.</b>
+</p>
+
+{% formfield player.feel_bad_ask %}
+
+{% formfield player.fairness %}
+
+{% formfield player.risk_pooling_true %}
+
+{% formfield player.risk_pooling_false %}
+
+{% formfield player.why_give label="If you ever gave cattle to your partner, why did you give?" %}
+
+<p>
+    Please click Next to continue.
+</p>
+
+{% next_button %}
+
+{% endblock %}

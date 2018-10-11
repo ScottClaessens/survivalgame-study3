@@ -1,0 +1,29 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    <b>Instructions</b> - Earning Money
+{% endblock %}
+
+{% block content %}
+
+<p>
+    You have earned an initial {{base_pay}} for taking part in this experiment.
+    Also, you will earn more money by answering comprehension questions before the game starts,
+    by waiting to be paired with another player, and from your performance in the game.
+</p>
+<p>
+    Your payment from the game is calculated by adding up the cattle you own at the beginning of every year,
+    across the whole game (10 cattle = $0.01). For example, if you survived for ten years, with 70 cattle at the
+    beginning of each of those years, your total would be 700 cattle and you would earn $0.70 from the game.
+</p>
+<p><b>
+    Therefore, to maximize your earnings, you should try to survive as long as possible, with as many cattle as you can.
+</b></p>
+<p>
+    Click Next to continue.
+</p>
+
+{% next_button %}
+
+{% endblock %}

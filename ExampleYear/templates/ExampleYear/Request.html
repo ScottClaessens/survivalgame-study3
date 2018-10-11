@@ -1,0 +1,83 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    <b>Example Year</b> - Ask for cattle
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Your current herd size is <b>{{herd_size_after_shock}}</b>.
+    You are above the survival threshold of {{minherd|c}}.
+</p>
+
+{% if charts %}
+    <br>
+    {% include 'SurvivalGame/chart.html' %}
+{% endif %}
+
+{% if visible_ask %}
+        <p>Other players:</p>
+        <ul>
+            <li>
+                Player 2's current herd size is <b>{{ herd_size_after_shock }}</b>.
+            </li>
+        </ul>
+{% endif %}
+
+<br>
+
+{% formfield player.request %}
+
+<p>
+    Click Next to continue.
+</p>
+
+{% next_button %}
+
+{% if summary_box %}
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>Example Year Summary</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Current herd size:</td>
+            <td><b>{{herd_size_after_shock}}</b></td>
+        </tr>
+        <tr>
+            <td><u>Incomings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player you requested help from:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount requested by you:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount received:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td><u>Outgoings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player(s) requested help from you:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount(s) sent:</td>
+            <td><b>-</b></td>
+        </tr>
+    </table>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Prolific ID
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Before we start the study, please enter your Prolific ID number. Please check this carefully before
+    continuing, as we will use this code to pay you.
+</p>
+
+{% formfield player.prolificID label="What is your Prolific ID number?" %}
+
+{% next_button %}
+
+{% endblock %}

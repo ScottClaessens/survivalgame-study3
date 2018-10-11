@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Earnings
+{% endblock %}
+
+{% block content %}
+
+<p>
+    In total, you earned <b>{{final_payment}}</b> from this study.
+</p>
+<ul>
+    <li>Your initial participation payment ({{participation_fee}})</li>
+    <li>Answering the comprehension questions ($0.14)</li>
+    <li>Waiting to be connected to a partner ({{payment_for_wait}})</li>
+    <li>Playing the game ({{payment_from_game}})</li>
+</ul>
+<p>
+    Please click Next to continue.
+</p>
+
+{% next_button %}
+
+{% endblock %}

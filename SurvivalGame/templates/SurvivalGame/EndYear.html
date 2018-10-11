@@ -1,0 +1,124 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    End of <b>Year {{round_number}}</b>
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Your final herd size for Year {{round_number}} is <b>{{ herd_size_after_transfers }}</b>.
+    {% if under_minimum == False %}
+        You have ended the year above the survival threshold of {{minherd|c}}.
+    {% endif %}
+</p>
+<p class="redtext">
+{% if under_minimum == True %}
+    {% if dead == False %}
+        <i><b>WARNING:</b> Your herd size is under the survival threshold of {{minherd|c}}</i>.
+        You have finished the year under the survival threshold. From the beginning of next year,
+        you will have <b>{{under_minimum_years_left_end}}
+        {% if under_minimum_years_left_end > 1 %}
+            years
+        {% else %}
+            year
+        {% endif %}
+        </b> left to increase your herd size over the threshold. If, after this time, your herd size is still under
+        the survival threshold, you will die and your game will be over!
+    {% elif dead %}
+        <b>
+            Your herd size has remained under the survival threshold of {{minherd|c}}. As you have finished under the
+            survival threshold for {{under_minimum_years_before_death}} years in a row, <u>you have died</u> and your game is over.
+        </b>
+    {% endif %}
+{% endif %}
+</p>
+
+{% if charts %}
+    <br>
+    {% include 'SurvivalGame/chart.html' %}
+{% endif %}
+
+<p>
+    Click Next to continue.
+</p>
+
+{% next_button %}
+
+{% if summary_box %}
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>Year {{round_number}} Summary</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Current herd size:</td>
+            <td><b>{{herd_size_after_transfers}}</b></td>
+        </tr>
+        <tr>
+            <td><u>Incomings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player you requested help from:</td>
+            <td><b>{% if request %}Player {{request_player}}{% else %}-{% endif %}</b></td>
+        </tr>
+        <tr>
+            <td>Amount requested by you:</td>
+            <td><b>{% if request %}{{request_amount}}{% else %}-{% endif %}</b></td>
+        </tr>
+        <tr>
+            <td>Amount received:</td>
+            <td><b>
+                {% if request %}
+                    {% for t in all_transfers %}
+                        {% if t.receiver__id_in_group == player.id_in_group %}
+                            {{t.amount_sent|c}}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    -
+                {% endif %}
+            </b></td>
+        </tr>
+            <tr>
+            <td><u>Outgoings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player(s) requested help from you:</td>
+            <td><b>
+                {% if request_me > 0 %}
+                    Player(s)
+                    {% for o in other_players %}
+                        {% if o.request_player == player.id_in_group %}
+                            {{o.id_in_group}}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    -
+                {% endif %}
+            </b></td>
+        </tr>
+        <tr>
+            <td>Amount(s) sent:</td>
+            <td><b>
+                {% if request_me > 0 %}
+                    {% for t in all_transfers %}
+                        {% if t.sender__id_in_group == player.id_in_group %}
+                            {{t.amount_sent|c}}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    -
+                {% endif %}
+            </b></td>
+        </tr>
+    </table>
+{% endif %}
+
+{% endblock %}

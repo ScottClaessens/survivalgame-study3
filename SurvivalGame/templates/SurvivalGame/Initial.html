@@ -1,0 +1,36 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    <b>Begin the game</b>
+{% endblock %}
+
+{% block content %}
+
+<p>
+    <b>YOU ARE NOW PLAYING A LIVE GAME WITH ANOTHER PLAYER.</b>
+</p>
+<p>
+    You begin the game with <b>{{initial|c}}</b>.
+</p>
+
+{% if charts %}
+    <br>
+    {% include 'SurvivalGame/chart.html' %}
+{% endif %}
+
+<p>
+    You are playing in a group of {{Constants.players_per_group}} players.
+    {% if limited_degree == True %}
+        However, you will only ever interact with {{k}} of them.
+    {% endif %}
+    In this group, you are <b>Player {{player.id_in_group}}</b>.
+</p>
+
+<p>
+    Click Next to begin the first year.
+</p>
+
+{% next_button %}
+
+{% endblock %}

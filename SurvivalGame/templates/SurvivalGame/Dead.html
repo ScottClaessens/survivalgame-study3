@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    You have died
+{% endblock %}
+
+{% block content %}
+
+<p>
+    You have died, and so you have been removed from the game.
+</p>
+<p>
+    <b>Please click Next <u>now</u></b> to end the game.
+</p>
+
+{% next_button %}
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    <b>Instructions</b> - Playing the Game
+{% endblock %}
+
+{% block content %}
+
+<p>
+    <b>Your goal is to manage a herd of cattle over time, and to survive for as long as possible.</b>
+</p>
+<p>
+    You will begin the game with {{initial|c}}.
+    You will play for several rounds, with each round acting as a "year" of time.
+    Each year, the size of your herd will grow or shrink, and you will have an opportunity to ask for cattle from
+    the other player in your group.
+</p>
+<p>
+    <b>In order to survive, you must keep your herd size above the "survival threshold" of {{minherd|c}}.</b>
+    Below this threshold, it is impossible to remain a herder.
+</p>
+<p>
+    Click Next to learn more about the game.
+</p>
+
+{% next_button %}
+
+{% endblock %}

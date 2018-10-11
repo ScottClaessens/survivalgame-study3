@@ -1,0 +1,35 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Thank you very much for completing this experiment.
+</p>
+<p>
+    The following questions are not compulsory, but we will pay you <b>an extra $0.01</b>
+    on top of what you have already earned for each question answered.
+</p>
+<p>
+    Please state <b>to what extent you agree / disagree with the statements below.</b>
+</p>
+
+{% formfield player.rushed %}
+
+{% formfield player.waiting %}
+
+{% formfield player.instructions %}
+
+{% formfield player.feedback label="Any other feedback?" %}
+
+<p>
+    Please click Next to complete the study.
+</p>
+
+{% next_button %}
+
+{% endblock %}

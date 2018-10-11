@@ -1,0 +1,64 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    <b>Example Year</b> - No cattle transfers
+{% endblock %}
+
+{% block content %}
+
+<p>
+    There were no cattle transfers this year.
+</p>
+
+<p>
+    Click Next to continue.
+</p>
+
+{% next_button %}
+
+{% if summary_box %}
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>Example Year Summary</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Current herd size:</td>
+            <td><b>{{herd_size_after_shock}}</b></td>
+        </tr>
+        <tr>
+            <td><u>Incomings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player you requested help from:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount requested by you:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount received:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td><u>Outgoings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player(s) requested help from you:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount(s) sent:</td>
+            <td><b>-</b></td>
+        </tr>
+    </table>
+{% endif %}
+
+{% endblock %}

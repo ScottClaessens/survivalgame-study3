@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Game abandoned
+{% endblock %}
+
+{% block content %}
+
+<p>
+    The game you were playing has been abandoned due to long waiting times.
+</p>
+<p>
+    The game is now over. We have recorded your earnings up to the point when the game was abandoned.
+</p>
+<p>
+    Please click Next to end the game.
+</p>
+
+{% next_button %}
+
+{% endblock %}

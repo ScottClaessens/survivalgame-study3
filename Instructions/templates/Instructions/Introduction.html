@@ -1,0 +1,31 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    <b>Instructions</b> - Introduction
+{% endblock %}
+
+{% block content %}
+
+<p>
+    You are about to participate in an experiment to study how people make decisions in groups.
+    You will play a <b>LIVE group game with one other participant.</b>
+    The experiment should take about 30 minutes.
+</p>
+<p>
+    In this study, you will be paid in the following ways:
+</p>
+<ol>
+    <li>An initial participation payment ($2.00)</li>
+    <li>Answering the comprehension questions ($0.02 per question)</li>
+    <li>Waiting to be connected to a partner ($0.05 per minute)</li>
+    <li>Playing the game ($0.01 for every 10 cattle, $1.85 on average)</li>
+    <li>Answering optional post-game questions ($0.01 per question)</li>
+</ol>
+<p>
+    Click Next to learn more about the game.
+</p>
+
+{% next_button %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Comprehension Questions
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Thank you for completing the example year. Please now complete the following comprehension questions.
+    <b>We will pay you an extra $0.02 for every correct answer.</b>
+    If you get a question wrong, a hint will come up and you will have a chance to correct your answer.
+</p>
+
+<br>
+
+{% for field in form %}
+    {% formfield field %}
+    <br>
+{% endfor %}
+
+{% next_button %}
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Begin Study
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Thank you. You completed all the comprehension questions correctly.
+    You will now be paired with another player to complete the real game.
+    If you enter the waiting lobby, we will pay you $0.05 for each minute spent waiting to be connected (maximum $0.50).
+</p>
+<p>
+    When a partner has been found, you will <b>immediately begin the study</b>.
+</p>
+<p style="text-align:center">
+    <u>This will be a <b>LIVE INTERACTION</b> with another <b>REAL PLAYER</b>.</u>
+</p>
+<p>
+    <b>Please pay attention during the game</b>, otherwise the other player will have to wait for you.
+    If you have to wait too long for the other player, you may abandon the game. If this happens,
+    you will proceed to the end of the game and your game payment will be saved.
+</p>
+<p>
+    <b>If you are ready</b>, click Next to be paired with another participant.
+</p>
+
+{% next_button %}
+
+{% endblock %}

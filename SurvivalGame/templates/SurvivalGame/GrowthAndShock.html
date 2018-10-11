@@ -1,0 +1,117 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    <b>Year {{round_number}}</b> - Herd births and deaths
+{% endblock %}
+
+{% block content %}
+
+<p>
+    After this year's births, your herd
+    {% if herd_size_initial < herd_size_after_growth %}
+        grew from {{ herd_size_initial }} to {{ herd_size_after_growth }}.
+    {% elif herd_size_initial == herd_size_after_growth %}
+        did not change from {{ herd_size_after_growth }}.
+    {% else %}
+        reduced from {{ herd_size_initial }} to {{ herd_size_after_growth }}.
+    {% endif %}
+</p>
+
+{% if shock_occurrence == True %}
+    <p>
+        Then, <b>a disaster hit your herd.</b>
+        {% if herd_size_after_growth < herd_size_after_shock %}
+            This disaster was positive, increasing your herd size from
+            {{ herd_size_after_growth }} to <b>{{ herd_size_after_shock }}</b>.
+        {% elif herd_size_after_growth == herd_size_after_shock %}
+            However, the disaster did not affect your cattle.
+            As a result, your herd did not change from <b>{{ herd_size_after_shock }}</b>.
+        {% else %}
+            As a result of this, your herd reduced from {{ herd_size_after_growth }}
+            to <b>{{ herd_size_after_shock }}</b>.
+        {% endif %}
+        {% if under_minimum == False %}
+            You are above the survival threshold of {{minherd|c}}.
+        {% endif %}
+    </p>
+{% else %}
+    <p>
+        No disaster hit your herd this year, so your herd remained at <b>{{herd_size_after_shock}}</b>.
+        {% if under_minimum == False %}
+            You are above the survival threshold of {{minherd|c}}.
+        {% endif %}
+    </p>
+{% endif %}
+
+{% if under_minimum == True %}
+    <p class="redtext">
+        <i>
+            <b>WARNING:</b> Your herd size is under the survival threshold of {{minherd|c}}.
+            You have <b>{{under_minimum_years_left}}
+            {% if under_minimum_years_left > 1 %}
+                years
+            {% else %}
+                year
+            {% endif %}</b>
+            left to increase your herd size over this survival threshold, or you will die.
+        </i>
+    </p>
+{% endif %}
+
+{% if charts %}
+    <br>
+    {% include 'SurvivalGame/chart.html' %}
+{% endif %}
+
+<p>
+    Click Next to continue.
+</p>
+
+{% next_button %}
+
+{% if summary_box %}
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>Year {{round_number}} Summary</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Current herd size:</td>
+            <td><b>{{herd_size_after_shock}}</b></td>
+        </tr>
+        <tr>
+            <td><u>Incomings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player you requested help from:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount requested by you:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount received:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td><u>Outgoings</u></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Player(s) requested help from you:</td>
+            <td><b>-</b></td>
+        </tr>
+        <tr>
+            <td>Amount(s) sent:</td>
+            <td><b>-</b></td>
+        </tr>
+    </table>
+{% endif %}
+
+{% endblock %}

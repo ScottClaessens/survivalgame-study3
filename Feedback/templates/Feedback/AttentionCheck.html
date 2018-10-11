@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    What was this experiment about?
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Research shows that people may not pay attention when answering questions.
+    If you are reading this, please select the last choice in the following question -
+    the one at the very bottom of the list. Thank you for participating and taking the
+    time to read through the questions carefully.
+</p>
+
+{% formfield player.attention %}
+
+<p>
+    Please click Next to continue.
+</p>
+
+{% next_button %}
+
+{% endblock %}

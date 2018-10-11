@@ -1,0 +1,105 @@
+{% extends "otree/Page.html" %}
+{% load otree_tags %}
+
+{% block title %}Please read this before clicking "Accept"{% endblock %}#
+
+{% block styles %}
+<style type="text/css">
+    .box {
+	width:100%;
+	height:100%;
+	background:#F5F5DC; /* biege color */
+	margin:20px auto;
+    padding: 10px 10px 10px 10px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<p>
+    <b>Title of the study:</b> Group decision making
+</p>
+<p>
+    <b>Length of the study:</b> about 30 minutes
+</p>
+<p>
+    <b>Brief description:</b> LIVE decision making experiment with one other participant
+</p>
+<p>
+    <b>Payment:</b> average <u>$3.00</u> ($1.00 plus bonuses)
+</p>
+<ol>
+    <li>An initial participation payment ($1.00)</li>
+    <li>Answering the comprehension questions ($0.02 per question)</li>
+    <li>Waiting to be connected to a partner ($0.05 per minute)</li>
+    <li>Playing the game ($1.85 on average)</li>
+    <li>Answers to optional post-game questions ($0.01 per question)</li>
+</ol>
+
+<br>
+
+<div class="box">
+
+    <div align="center">
+        <h3>
+            Consent form
+        </h3>
+    </div>
+    <p>
+        I am a visiting scholar in the Department of Psychology at Arizona State University.
+        I am conducting a research study to understand how people make decisions in groups.
+    </p>
+    <p>
+        I am inviting your participation, which will involve playing a live group game with another real player.
+        You will first provide some basic demographic information. You will then read some instructions about
+        the live group game. Before beginning the game, you will play an example round with the computer and
+        answer some comprehension questions to make sure you understand the game. The game itself will require
+        you to manage a resource over time. The study should take no longer than 30 minutes, and you have the
+        right not to answer any question, and to stop participation at any time.
+    </p>
+    <p>
+        Your participation in this study is voluntary. If you choose not to participate or to withdraw from the
+        study at any time, there will be no penalty. You must be 18 or older to participate in this study.
+    </p>
+    <p>
+        There are five ways of being paid in this study. The first initial payment of $1.00 is paid to every
+        participant when they begin the study. An extra $0.02 will be paid for each comprehension question answered.
+        Participants will be paid $0.05 per minute spent waiting to be paired with another player. The game itself
+        pays according to the participant's performance (average $1.85). Finally, an extra $0.01 will be paid for
+        each optional post-game question answered. We expect players to earn an average of $3.00 in total
+        ($1.14 - $4.00).
+    </p>
+    <p>
+        There are no foreseeable risks or discomforts to your participation.
+    </p>
+    <p>
+        Your responses will be anonymous. The results of this study may be used in reports, presentations, or
+        publications but your name will never be used.
+    </p>
+    <p>
+        If you have any questions concerning the research study, please contact the research team at:
+        sclaess1@asu.edu or aktipis@asu.edu.
+    </p>
+    <p>
+        If you have any questions about your rights as a subject/participant in this research,
+        or if you feel you have been placed at risk, you can contact the Chair of the Human Subjects Institutional
+        Review Board, through the ASU Office of Research Integrity and Assurance, at (480) 965-6788.
+    </p>
+
+</div>
+
+<br>
+
+<p><b>
+    This is a <u>LIVE</u> experiment, and you will interact in <u>real time</u> with another participant:
+</b></p>
+<ul><b>
+    <li>Pairs of participants recruited via MTurk</li>
+    <li>30 MINUTES REQUIRED <u>WITHOUT INTERRUPTION</u>, STARTING IMMEDIATELY</li>
+</b></ul>
+<p><b>
+    By accepting and participating in this HIT, you provide informed consent to take part in this study.
+</b></p>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "otree/FormPage.html" %}
+{% load staticfiles otree_tags %}
+
+{% comment %}
+    this file used to be called Base.html
+    If your app's templates contain this line:
+    {% extends "global/Base.html" %}
+    You should change it to:
+    {% extends "global/Page.html" %}
+{% endcomment %}
+
+{% block global_scripts %}
+    <script>
+        $('.otree-btn-next').click(function () {
+            $('<input>').attr({
+                type: 'hidden',
+                name: 'next_btn_clicked',
+                value: '1'
+            }).appendTo('form');
+        })
+        $("form").submit(function (e) {
+            var timeout_name = "timeout_happened";
+            var tmt_input = "input[name='" + timeout_name + "']";
+            var nbtn_name = "next_btn_clicked";
+            var nbtn_input = "input[name='" + nbtn_name + "']";
+
+            if ($(this).find(tmt_input).length && !$(this).find(nbtn_input).length) {
+                e.preventDefault();
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var socket;
+            console.log(socket);
+        });
+
+    </script>
+{% endblock %}
+
+{% block global_styles  %}
+<style type = text/css>
+.redtext {
+    color: #FF0000;
+}
+table {
+    border-collapse: collapse;
+    padding: 4px;
+    border: 1px solid black;
+    font-size: 85%;
+}
+th {
+    background-color: #E6E6E6;
+    padding: 2px;
+}
+td, tr {
+    padding: 3px;
+}
+tr:nth-child(even) {
+    background-color: #FAFAFA
+}
+</style>
+{% endblock %}
