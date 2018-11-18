@@ -178,7 +178,7 @@ SESSION_CONFIGS = [
         'charts': True,                             # True
         'summary_box': False,                       # False
         'real_world_currency_per_point': 0.01,      # 0.01
-        'participation_fee': 2.00,                  # 1.00
+        'participation_fee': 3.50,                  # 1.00
     },
     {
         'name': 'SurvivalGame_VisibleWhenAsk',
@@ -214,7 +214,7 @@ SESSION_CONFIGS = [
         'charts': True,                             # True
         'summary_box': False,                       # False
         'real_world_currency_per_point': 0.01,      # 0.01
-        'participation_fee': 2.00,                  # 1.00
+        'participation_fee': 3.50,                  # 1.00
     },
     {
         'name': 'SurvivalGame_VisibleWhenGive',
@@ -250,7 +250,7 @@ SESSION_CONFIGS = [
         'charts': True,                             # True
         'summary_box': False,                       # False
         'real_world_currency_per_point': 0.01,      # 0.01
-        'participation_fee': 2.00,                  # 1.00
+        'participation_fee': 3.50,                  # 1.00
     },
     {
         'name': 'SurvivalGame_Hidden',
@@ -286,7 +286,7 @@ SESSION_CONFIGS = [
         'charts': True,                             # True
         'summary_box': False,                       # False
         'real_world_currency_per_point': 0.01,      # 0.01
-        'participation_fee': 2.00,                  # 1.00
+        'participation_fee': 3.50,                  # 1.00
     },
 ]
 

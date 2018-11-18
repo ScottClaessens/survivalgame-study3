@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="421179b4-57f4-4cdd-9740-3fc2e8990722" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements_base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instructions/templates/Instructions/Introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/Instructions/templates/Instructions/Introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,26 +21,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demographics/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements_base.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/requirements_base.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,7 +32,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>outgoing</find>
       <find>debts</find>
       <find>set_under</find>
       <find>set_request</find>
@@ -79,9 +61,10 @@
       <find>observa</find>
       <find>observ</find>
       <find>MTurk</find>
+      <find>participation_fee</find>
     </findStrings>
     <dirStrings>
-      <dir>C:\Users\Scott\Documents\ARIZONA\oTree project\SurvivalGame_v6_Prolific (Study3)</dir>
+      <dir />
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -130,7 +113,6 @@
         <option value="$PROJECT_DIR$/Comprehension/views.py" />
         <option value="$PROJECT_DIR$/Instructions/templates/Instructions/Introduction.html" />
         <option value="$PROJECT_DIR$/SurvivalGame/templates/SurvivalGame/Request.html" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/ExampleYear/templates/ExampleYear/Request.html" />
         <option value="$PROJECT_DIR$/Instructions/templates/Instructions/Manipulation.html" />
         <option value="$PROJECT_DIR$/Demographics/views.py" />
@@ -141,6 +123,7 @@
         <option value="$PROJECT_DIR$/Feedback/templates/Feedback/ProlificFinal.html" />
         <option value="$PROJECT_DIR$/Demographics/models.py" />
         <option value="$PROJECT_DIR$/requirements_base.txt" />
+        <option value="$PROJECT_DIR$/settings.py" />
       </list>
     </option>
   </component>
@@ -155,7 +138,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -170,11 +153,6 @@
             <path>
               <item name="SurvivalGame_v6_Prolific (Study3)" type="b2602c69:ProjectViewProjectNode" />
               <item name="SurvivalGame_v6_Prolific (Study3)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SurvivalGame_v6_Prolific (Study3)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SurvivalGame_v6_Prolific (Study3)" type="462c0819:PsiDirectoryNode" />
-              <item name="Demographics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +259,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -290,9 +267,10 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32993197" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32967034" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12818792" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1295302" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32527474" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -303,27 +281,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32527474" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19495167" />
       <window_info id="Structure" order="1" weight="0.24973147" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32993197" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32527474" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32993197" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="212" column="46" selection-start-line="212" selection-start-column="46" selection-end-line="212" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Instructions/templates/Instructions/Manipulation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -639,6 +609,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements_base.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Demographics/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -646,10 +623,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements_base.txt">
+    <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="723">
+          <caret line="180" column="32" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
