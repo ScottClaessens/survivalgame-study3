@@ -267,7 +267,7 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32993197" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32967034" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1295302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13355705" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32527474" />
@@ -389,6 +389,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="372" column="12" lean-forward="true" selection-start-line="372" selection-start-column="12" selection-end-line="372" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -403,6 +406,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8292">
           <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#134#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -625,8 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="180" column="32" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="32" />
+        <state relative-caret-position="498">
+          <caret line="289" column="6" lean-forward="true" selection-start-line="289" selection-start-column="6" selection-end-line="289" selection-end-column="6" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
