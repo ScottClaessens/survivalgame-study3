@@ -145,9 +145,9 @@ SESSION_CONFIG_DEFAULTS = {
 
 SESSION_CONFIGS = [
     {
-        'name': 'SurvivalGame_Visible',
-        'display_name': 'Survival Game - Visible',
-        'num_demo_participants': 2,
+        'name': 'SurvivalGame',
+        'display_name': 'Survival Game',
+        'num_demo_participants': 16,
         'app_sequence': [
             'Demographics',
             'Instructions',
@@ -173,121 +173,11 @@ SESSION_CONFIGS = [
         'years_before_death': 3,                    # 3
         'nonrandom_network_limited_degree': False,  # False
         'nonrandom_network_k_degree': 4,            # 4
-        'visible_ask': True,                        # True
-        'visible_give': True,                       # True
         'charts': True,                             # True
         'summary_box': False,                       # False
         'real_world_currency_per_point': 0.01,      # 0.01
         'participation_fee': 3.25,                  # 1.00
-    },
-    {
-        'name': 'SurvivalGame_VisibleWhenAsk',
-        'display_name': 'Survival Game - Visible (Only when asking)',
-        'num_demo_participants': 2,
-        'app_sequence': [
-            'Demographics',
-            'Instructions',
-            'ExampleYear',
-            'Comprehension',
-            'SurvivalGame',
-            'Earnings',
-            'Feedback',
-        ],
-
-        # For descriptions of each of these, see README - Survival Game.txt
-        #
-        'initialherd': 70,                          # 70
-        'minherd': 64,                              # 64
-        'growth_rate_mean': 0.034,                  # 0.034
-        'growth_rate_sd': 0.0253,                   # 0.0253
-        'shock_rate': 0.2,                          # 0.1
-        'shock_size_mean': 0.15,                    # 0.3
-        'shock_size_sd': 0.05,                      # 0.1
-        'shock_correlated': 0,                      # 0
-        'shock_predictable': False,                 # False
-        'shock_predictable_years': 4,               # 4
-        'years_before_death': 3,                    # 3
-        'nonrandom_network_limited_degree': False,  # False
-        'nonrandom_network_k_degree': 4,            # 4
-        'visible_ask': True,                        # True
-        'visible_give': False,                      # True
-        'charts': True,                             # True
-        'summary_box': False,                       # False
-        'real_world_currency_per_point': 0.01,      # 0.01
-        'participation_fee': 3.25,                  # 1.00
-    },
-    {
-        'name': 'SurvivalGame_VisibleWhenGive',
-        'display_name': 'Survival Game - Visible (Only when giving)',
-        'num_demo_participants': 2,
-        'app_sequence': [
-            'Demographics',
-            'Instructions',
-            'ExampleYear',
-            'Comprehension',
-            'SurvivalGame',
-            'Earnings',
-            'Feedback',
-        ],
-
-        # For descriptions of each of these, see README - Survival Game.txt
-        #
-        'initialherd': 70,                          # 70
-        'minherd': 64,                              # 64
-        'growth_rate_mean': 0.034,                  # 0.034
-        'growth_rate_sd': 0.0253,                   # 0.0253
-        'shock_rate': 0.2,                          # 0.1
-        'shock_size_mean': 0.15,                    # 0.3
-        'shock_size_sd': 0.05,                      # 0.1
-        'shock_correlated': 0,                      # 0
-        'shock_predictable': False,                 # False
-        'shock_predictable_years': 4,               # 4
-        'years_before_death': 3,                    # 3
-        'nonrandom_network_limited_degree': False,  # False
-        'nonrandom_network_k_degree': 4,            # 4
-        'visible_ask': False,                       # True
-        'visible_give': True,                       # True
-        'charts': True,                             # True
-        'summary_box': False,                       # False
-        'real_world_currency_per_point': 0.01,      # 0.01
-        'participation_fee': 3.25,                  # 1.00
-    },
-    {
-        'name': 'SurvivalGame_Hidden',
-        'display_name': 'Survival Game - Hidden',
-        'num_demo_participants': 2,
-        'app_sequence': [
-            'Demographics',
-            'Instructions',
-            'ExampleYear',
-            'Comprehension',
-            'SurvivalGame',
-            'Earnings',
-            'Feedback',
-        ],
-
-        # For descriptions of each of these, see README - Survival Game.txt
-        #
-        'initialherd': 70,                          # 70
-        'minherd': 64,                              # 64
-        'growth_rate_mean': 0.034,                  # 0.034
-        'growth_rate_sd': 0.0253,                   # 0.0253
-        'shock_rate': 0.2,                          # 0.1
-        'shock_size_mean': 0.15,                    # 0.3
-        'shock_size_sd': 0.05,                      # 0.1
-        'shock_correlated': 0,                      # 0
-        'shock_predictable': False,                 # False
-        'shock_predictable_years': 4,               # 4
-        'years_before_death': 3,                    # 3
-        'nonrandom_network_limited_degree': False,  # False
-        'nonrandom_network_k_degree': 4,            # 4
-        'visible_ask': False,                       # True
-        'visible_give': False,                      # True
-        'charts': True,                             # True
-        'summary_box': False,                       # False
-        'real_world_currency_per_point': 0.01,      # 0.01
-        'participation_fee': 3.25,                  # 1.00
-    },
+    }
 ]
 
 # anything you put after the below line will override

@@ -40,8 +40,8 @@ class Comprehension(Page):
             return 'This is incorrect. Your overall payment from the experiment comes from ALL OF THE ABOVE.'
 
     def q7_error_message(self, value):
-        if self.session.config['visible_ask']:
-            if self.session.config['visible_give']:
+        if self.player.participant.vars['visible_ask']:
+            if self.player.participant.vars['visible_give']:
                 if not value == 1:
                     return 'This is incorrect. The other player can see how many cattle you currently have both ' \
                            'when they ask you for cattle AND when they decide whether to give you cattle.'
@@ -50,7 +50,7 @@ class Comprehension(Page):
                     return 'This is incorrect. The other player can see how many cattle you currently have only ' \
                            'when they ask you for cattle.'
         else:
-            if self.session.config['visible_give']:
+            if self.player.participant.vars['visible_give']:
                 if not value == 3:
                     return 'This is incorrect. The other player can see how many cattle you currently have only ' \
                            'when they decide whether to give you cattle.'

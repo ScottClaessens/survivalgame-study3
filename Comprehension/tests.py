@@ -7,13 +7,13 @@ from .models import Constants
 class PlayerBot(Bot):
 
     def play_round(self):
-        if self.session.config['visible_ask']:
-            if self.session.config['visible_give']:
+        if self.player.participant.vars['visible_ask']:
+            if self.player.participant.vars['visible_give']:
                 x = 1
             else:
                 x = 2
         else:
-            if self.session.config['visible_give']:
+            if self.player.participant.vars['visible_give']:
                 x = 3
             else:
                 x = 4

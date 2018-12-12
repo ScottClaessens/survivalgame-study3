@@ -22,8 +22,8 @@ class PlayingTheGame2(Page):
 
 class Manipulation(Page):
     def vars_for_template(self):
-        return {'visible_give': self.session.config['visible_give'],
-                'visible_ask': self.session.config['visible_ask']}
+        return {'visible_give': self.player.participant.vars['visible_give'],
+                'visible_ask': self.player.participant.vars['visible_ask']}
 
 
 class Earnings(Page):

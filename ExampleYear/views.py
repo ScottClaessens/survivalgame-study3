@@ -8,8 +8,8 @@ from django.db.models import Q
 
 def vars_for_all_templates(self):
     return {'herd_size_for_chart': int(self.player.participant.vars['example_year_herd_size']),
-            'visible_ask': self.session.config['visible_ask'],
-            'visible_give': self.session.config['visible_give'],
+            'visible_ask': self.player.participant.vars['visible_ask'],
+            'visible_give': self.player.participant.vars['visible_give'],
             'minherd': self.session.config['minherd'],
             'charts': self.session.config['charts'],
             'summary_box': self.session.config['summary_box'],

@@ -15,8 +15,8 @@ def vars_for_all_templates(self):
         p = self.group.get_player_by_id(o)
         other_players.append(p)
     return {'herd_size_for_chart': int(self.player.participant.vars['herd_size']),
-            'visible_ask': self.session.config['visible_ask'],
-            'visible_give': self.session.config['visible_give'],
+            'visible_ask': self.player.participant.vars['visible_ask'],
+            'visible_give': self.player.participant.vars['visible_give'],
             'round_number': self.subsession.round_number,
             'minherd': self.session.config['minherd'],
             'charts': self.session.config['charts'],
@@ -35,6 +35,28 @@ class GroupingWait(CustomMturkWaitPage):
     use_task = True
     # when should the timer on the waiting lobby page start (in seconds)?
     startwp_timer = 600
+
+    def get_players_for_group(self, waiting_players):
+        print('in get_players_for_group')
+        treatment1players = [p for p in waiting_players if p.participant.vars['treatment'] == 1]
+        treatment2players = [p for p in waiting_players if p.participant.vars['treatment'] == 2]
+        treatment3players = [p for p in waiting_players if p.participant.vars['treatment'] == 3]
+        treatment4players = [p for p in waiting_players if p.participant.vars['treatment'] == 4]
+
+        if len(treatment1players) == 2:
+            print('about to create a group')
+            return [treatment1players[0], treatment1players[1]]
+        elif len(treatment2players) == 2:
+            print('about to create a group')
+            return [treatment2players[0], treatment2players[1]]
+        elif len(treatment3players) == 2:
+            print('about to create a group')
+            return [treatment3players[0], treatment3players[1]]
+        elif len(treatment4players) == 2:
+            print('about to create a group')
+            return [treatment4players[0], treatment4players[1]]
+        else:
+            print('not enough players to create a group')
 
     def is_displayed(self):
         return self.round_number == 1
